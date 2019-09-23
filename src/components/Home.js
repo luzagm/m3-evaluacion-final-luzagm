@@ -1,13 +1,14 @@
 import React from "react";
 import CharactersList from "./CharactersList";
-import Header from "./Header";
+import Filter from "./Filter";
+
 import "../stylesheets/App.scss";
 
 class Home extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Filter filterByName={this.props.filterByName} />
         <CharactersList characters={this.props.characters} />
       </div>
     );

@@ -1,5 +1,6 @@
 import React from "react";
 import fetchCharacters from "../services/fetchData";
+import Header from "./Header";
 import Home from "./Home";
 import "../stylesheets/App.scss";
 
@@ -7,8 +8,10 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      characters: []
+      characters: [],
+      inputValue: ""
     };
+    this.filterByName = this.filterByName.bind(this);
   }
 
   componentDidMount() {
@@ -20,10 +23,25 @@ class App extends React.Component {
     });
   }
 
+  filterByName(ev) {
+    let inputValue = ev.target.value;
+    this.setState({
+      inputValue: inputValue
+    });
+  }
+
   render() {
+    let searchResult = this.state.characters.filter(character => {
+      return character.name
+        .toUpperCase()
+        .includes(this.state.inputValue.toUpperCase());
+    });
+
     return (
       <div className="App">
-        <Home characters={this.state.characters} />
+        <Header />
+
+        <Home characters={searchResult} filterByName={this.filterByName} />
       </div>
     );
   }
