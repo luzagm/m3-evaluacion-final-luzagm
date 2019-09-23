@@ -1,23 +1,26 @@
 import React from "react";
-import CharactersInfo from "./CharactersInfo";
+import { Link } from "react-router-dom";
+import Details from "./Details";
 import "../stylesheets/App.scss";
 
 class CharactersDetails extends React.Component {
   render() {
-    let charactersDetails = this.props.characters.map((character, index) => {
-      return (
-        <CharactersInfo
-          key={index}
-          characterImage={character.image}
-          characterName={character.name}
-          characterSpecies={character.species}
-          characterStatus={character.status}
-          characterOrigin={character.origin.name}
-          chapters={character.episode.length}
+    console.log(this.props.character);
+    return (
+      <div className="details">
+        <Link className="back-link" to="/">
+          Volver
+        </Link>
+        <Details
+          characterImage={this.props.character.image}
+          characterName={this.props.character.name}
+          characterSpecies={this.props.character.species}
+          characterStatus={this.props.character.status}
+          characterOrigin={this.props.character.origin.name}
+          chapters={this.props.character.episode.length}
         />
-      );
-    });
-    return <div className="card-info">{charactersDetails}</div>;
+      </div>
+    );
   }
 }
 

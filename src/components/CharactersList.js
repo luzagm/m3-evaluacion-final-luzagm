@@ -8,6 +8,7 @@ class CharactersList extends React.Component {
       return (
         <Character
           key={index}
+          characterId={character.id}
           characterImage={character.image}
           characterName={character.name}
           characterSpecies={character.species}
