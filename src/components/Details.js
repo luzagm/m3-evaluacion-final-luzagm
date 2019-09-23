@@ -6,7 +6,7 @@ const Details = props => {
     <div>
       <div className="card-details">
         <img
-          className="image"
+          className="character-details-image"
           src={`${props.characterImage}`}
           alt={`${props.characterName}`}
         />

@@ -20,6 +20,10 @@ h3 {
   align-items: center;
 }
 
+.header {
+  padding-top: 20px;
+}
+
 .details {
   margin: 70px 0;
   display: flex;
@@ -34,7 +38,12 @@ h3 {
 }
 
 .back-link {
+  display: flex;
   font-size: 20px;
   text-decoration: none;
   color: white;
+
+  &:hover {
+    color: rgb(0, 255, 0);
+  }
 }

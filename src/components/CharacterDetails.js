@@ -10,7 +10,7 @@ const CharactersDetails = props => {
     return (
       <div className="details">
         <Link className="back-link" to="/">
-          Volver
+          <i class="material-icons">fast_rewind</i> Volver
         </Link>
         <Details
           characterImage={props.character.image}
