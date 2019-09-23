@@ -12,7 +12,7 @@ class Characters extends React.Component {
         />
         <div className="character-info">
           <h3 className="name-title">{this.props.characterName}</h3>
-          <p className="species-title">{this.props.characterSepecies}</p>
+          <p className="species-title">{this.props.characterSpecies}</p>
         </div>
       </div>
     );

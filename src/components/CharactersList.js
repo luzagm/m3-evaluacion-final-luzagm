@@ -10,7 +10,7 @@ class CharactersList extends React.Component {
           key={index}
           characterImage={character.image}
           characterName={character.name}
-          characterSepecies={character.species}
+          characterSpecies={character.species}
         />
       );
     });

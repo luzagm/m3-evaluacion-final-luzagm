@@ -2,6 +2,7 @@ import React from "react";
 import fetchCharacters from "../services/fetchData";
 import Header from "./Header";
 import Home from "./Home";
+import CharactersDetails from "./CharacterDetails";
 import "../stylesheets/App.scss";
 
 class App extends React.Component {
@@ -42,6 +43,8 @@ class App extends React.Component {
         <Header />
 
         <Home characters={searchResult} filterByName={this.filterByName} />
+
+        <CharactersDetails characters={this.state.characters} />
       </div>
     );
   }
