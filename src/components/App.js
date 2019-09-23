@@ -1,6 +1,6 @@
 import React from "react";
 import fetchCharacters from "../services/fetchData";
-import CharactersList from "./CharactersList";
+import Home from "./Home";
 import "../stylesheets/App.scss";
 
 class App extends React.Component {
@@ -23,7 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <CharactersList characters={this.state.characters} />
+        <Home characters={this.state.characters} />
       </div>
     );
   }
