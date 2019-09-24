@@ -52,11 +52,13 @@
   align-items: center;
 
   &-text {
+    width: 70%;
     margin-top: 55px;
     font-size: 18px;
     font-family: serif;
     color: green;
     font-style: oblique;
+    text-align: center;
   }
 
   &-image {
@@ -67,6 +69,7 @@
 @media all and (min-width: 768px) {
   .not-found {
     &-text {
+      width: 100%;
       font-size: 24px;
     }
 

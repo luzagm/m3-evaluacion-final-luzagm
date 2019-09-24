@@ -39,7 +39,7 @@
 .label {
   color: rgb(0, 200, 0);
   font-family: serif;
-  font-size: 20px;
+  font-size: 18px;
   margin-right: 20px;
 }
 
@@ -52,5 +52,9 @@
   .input-search-input {
     width: 350px;
     height: 40px;
+  }
+
+  .label {
+    font-size: 20px;
   }
 }
