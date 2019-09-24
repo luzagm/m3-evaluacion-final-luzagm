@@ -4,6 +4,7 @@ import Details from "./Details";
 import "../stylesheets/App.scss";
 
 const CharactersDetails = props => {
+  console.log(props);
   if (props.character === undefined) {
     return <div>Cargando...</div>;
   } else {

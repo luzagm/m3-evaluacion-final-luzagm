@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.9677c686.chunk.css",
-    "main.js": "./static/js/main.9218e1e2.chunk.js",
-    "main.js.map": "./static/js/main.9218e1e2.chunk.js.map",
+    "main.css": "./static/css/main.6a054a6b.chunk.css",
+    "main.js": "./static/js/main.c13e5267.chunk.js",
+    "main.js.map": "./static/js/main.c13e5267.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.8c7223c0.js",
     "runtime-main.js.map": "./static/js/runtime-main.8c7223c0.js.map",
     "static/js/2.fa7f87a3.chunk.js": "./static/js/2.fa7f87a3.chunk.js",
     "static/js/2.fa7f87a3.chunk.js.map": "./static/js/2.fa7f87a3.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.e5c2386aa90c3e20d8f572f7b885d4ea.js": "./precache-manifest.e5c2386aa90c3e20d8f572f7b885d4ea.js",
+    "precache-manifest.3cfce456d20a69a9e25b7d81e0f5a91a.js": "./precache-manifest.3cfce456d20a69a9e25b7d81e0f5a91a.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.9677c686.chunk.css.map": "./static/css/main.9677c686.chunk.css.map",
-    "static/media/Rick_and_Morty_logo.png": "./static/media/Rick_and_Morty_logo.75509f2e.png"
+    "static/css/main.6a054a6b.chunk.css.map": "./static/css/main.6a054a6b.chunk.css.map",
+    "static/media/Logo.jpg": "./static/media/Logo.ea729bf2.jpg"
   }
 }

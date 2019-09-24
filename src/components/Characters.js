@@ -4,6 +4,24 @@ import { Link } from "react-router-dom";
 import "../stylesheets/App.scss";
 
 const Characters = props => {
+  let speciesIcon = () => {
+    if (props.characterSpecies === "Human") {
+      return (
+        <span className="smile" role="img" aria-label="is human">
+          🙂
+        </span>
+      );
+    } else if (props.characterSpecies === "Alien") {
+      return (
+        <span className="alien" role="img" aria-label="is alien">
+          👽
+        </span>
+      );
+    } else {
+      return <strong>?</strong>;
+    }
+  };
+
   return (
     <div className="character-card">
       <Link className="character-link" to={`/details/${props.characterId}`}>
@@ -14,7 +32,7 @@ const Characters = props => {
         />
         <div className="character-info">
           <h3 className="name-title">{props.characterName}</h3>
-          <p className="species-title">{props.characterSpecies}</p>
+          <p className="species-title">{speciesIcon()}</p>
         </div>
       </Link>
     </div>

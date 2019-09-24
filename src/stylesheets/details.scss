@@ -61,7 +61,7 @@
   }
 
   .character-details {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
     text-align: left;
     margin-left: 15px;
@@ -86,5 +86,27 @@
 
   .details {
     margin: 70px 0;
+  }
+
+  .heart {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    animation-name: heartBeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes heartBeat {
+    from {
+      font-size: 16px;
+    }
+    to {
+      font-size: 22px;
+    }
+  }
+
+  .skull {
+    font-size: 22px;
   }
 }

@@ -3,6 +3,28 @@ import PropTypes from "prop-types";
 import "../stylesheets/App.scss";
 
 const Details = props => {
+  let statusIcon = () => {
+    if (props.characterStatus === "Alive") {
+      return (
+        <span className="heart" role="img" aria-label="is alive">
+          ❤
+        </span>
+      );
+    } else if (props.characterStatus === "Dead") {
+      return (
+        <span className="skull" role="img" aria-label="is dead">
+          💀
+        </span>
+      );
+    } else {
+      return (
+        <span className="unknown" role="img" aria-label="unknown">
+          ❔
+        </span>
+      );
+    }
+  };
+
   return (
     <div>
       <div className="card-details">
@@ -14,8 +36,8 @@ const Details = props => {
         <div className="character-details">
           <h3 className="character-details-name">{props.characterName}</h3>
           <p className="character-details-status">
-            <span className="bold-title"> Status: </span>{" "}
-            {props.characterStatus}
+            <span className="bold-title"> Status: </span>
+            {statusIcon()}
           </p>
           <p className="character-details-species">
             <span className="bold-title"> Species: </span>
