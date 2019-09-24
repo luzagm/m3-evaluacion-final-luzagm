@@ -53,6 +53,28 @@
   align-items: flex-end;
 }
 
+.heart {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  animation-name: heartBeat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heartBeat {
+  from {
+    font-size: 12px;
+  }
+  to {
+    font-size: 18px;
+  }
+}
+
+.skull {
+  font-size: 22px;
+}
+
 @media all and (min-width: 768px) {
   .card-details {
     flex-direction: row;
@@ -90,10 +112,6 @@
   .heart {
     width: 28px;
     height: 28px;
-    display: inline-block;
-    animation-name: heartBeat;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
   }
 
   @keyframes heartBeat {
@@ -103,9 +121,5 @@
     to {
       font-size: 22px;
     }
-  }
-
-  .skull {
-    font-size: 22px;
   }
 }
