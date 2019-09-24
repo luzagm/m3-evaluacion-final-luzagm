@@ -1,3 +1,10 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .character-card {
   display: inline-block;
   width: 250px;
@@ -22,37 +29,8 @@
   height: 250px;
 }
 
-.card-details {
-  display: flex;
-  align-items: center;
-  width: 500px;
-  margin: 35px 0;
-  padding: 15px;
-  background-color: rgb(0, 191, 255);
-}
-
-.character-details {
+.character-link {
+  text-decoration: none;
   color: white;
-  margin-left: 15px;
-  line-height: 25px;
   font-family: serif;
-
-  &-name {
-    font-weight: bold;
-    font-size: 22px;
-    margin: 5px 0;
-  }
-
-  &-image {
-    height: 250px;
-    border: 1px solid black;
-  }
-}
-
-.bold-title {
-  font-weight: bold;
-}
-
-.material-icons {
-  margin-right: 10px;
 }
