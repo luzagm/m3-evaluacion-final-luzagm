@@ -1,14 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 import CharactersCard from "./CharactersCard";
+import RickAndMorty from "../images/rickandmorty.png";
 import "../stylesheets/App.scss";
 
 const CharactersList = props => {
   if (props.characters.length === 0) {
     return (
-      <p className="not-found">
-        No hay personajes que coincidan con la búsqueda
-      </p>
+      <div className="not-found">
+        <p className="not-found-text">
+          No hay personajes que coincidan con la búsqueda{" "}
+        </p>
+        <img src={`${RickAndMorty}`} alt="Rick and Morty" />
+      </div>
     );
   } else {
     let charactersList = props.characters.map((character, index) => {
