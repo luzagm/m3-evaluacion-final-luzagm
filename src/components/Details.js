@@ -7,7 +7,7 @@ const Details = props => {
     if (props.characterStatus === "Alive") {
       return (
         <span className="heart" role="img" aria-label="is alive">
-          ❤
+          ❤️
         </span>
       );
     } else if (props.characterStatus === "Dead") {
@@ -19,7 +19,7 @@ const Details = props => {
     } else {
       return (
         <span className="unknown" role="img" aria-label="unknown">
-          ❔
+          ❓
         </span>
       );
     }

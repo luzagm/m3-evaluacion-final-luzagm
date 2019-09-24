@@ -1,10 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Details from "./Details";
 import "../stylesheets/App.scss";
 
 const CharactersDetails = props => {
-  console.log(props);
   if (props.character === undefined) {
     return <div>Cargando...</div>;
   } else {
@@ -24,6 +24,10 @@ const CharactersDetails = props => {
       </div>
     );
   }
+};
+
+CharactersDetails.propTypes = {
+  character: PropTypes.object
 };
 
 export default CharactersDetails;

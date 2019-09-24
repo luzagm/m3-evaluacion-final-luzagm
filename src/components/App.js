@@ -11,9 +11,11 @@ class App extends React.Component {
     super();
     this.state = {
       characters: [],
-      inputValue: ""
+      inputValue: "",
+      radioValue: ""
     };
     this.filterByName = this.filterByName.bind(this);
+    this.filterByType = this.filterByType.bind(this);
     this.renderOriginal = this.renderOriginal.bind(this);
     this.renderDetail = this.renderDetail.bind(this);
   }
@@ -34,13 +36,35 @@ class App extends React.Component {
     });
   }
 
+  filterByType(ev) {
+    let radioValue = ev.currentTarget.value;
+    this.setState({ radioValue: radioValue });
+  }
+
   renderOriginal() {
-    let searchResult = this.state.characters.filter(character => {
-      return character.name
-        .toUpperCase()
-        .includes(this.state.inputValue.toUpperCase());
-    });
-    return <Home characters={searchResult} filterByName={this.filterByName} />;
+    let searchResult = [];
+
+    if (this.state.inputValue) {
+      searchResult = this.state.characters.filter(character => {
+        return character.name
+          .toUpperCase()
+          .includes(this.state.inputValue.toUpperCase());
+      });
+    } else {
+      searchResult = this.state.characters.filter(character => {
+        return character.species
+          .toUpperCase()
+          .includes(this.state.radioValue.toUpperCase());
+      });
+    }
+
+    return (
+      <Home
+        characters={searchResult}
+        filterByType={this.filterByType}
+        filterByName={this.filterByName}
+      />
+    );
   }
 
   renderDetail(props) {

@@ -1,18 +1,24 @@
 import React from "react";
+import PropTypes from "prop-types";
 import CharactersList from "./CharactersList";
 import Filter from "./Filter";
 
 import "../stylesheets/App.scss";
 
-class Home extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <Filter filterByName={this.props.filterByName} />
-        <CharactersList characters={this.props.characters} />
-      </div>
-    );
-  }
-}
+const Home = props => {
+  return (
+    <div className="App">
+      <Filter
+        filterByName={props.filterByName}
+        filterByType={props.filterByType}
+      />
+      <CharactersList characters={props.characters} />
+    </div>
+  );
+};
+
+Home.propTypes = {
+  character: PropTypes.array
+};
 
 export default Home;
