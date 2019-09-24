@@ -11,7 +11,7 @@ utilizar el servicio de https://rickandmortyapi.com/documentation/#get-all-chara
 información sobre los primeros 20 personajes de la serie. Sobre cada uno, vamos a pintar al menos:
 - foto
 - nombre
-- especie
+- especie <br>
 Si este servicio no funcionase tenemos una url de backup: https://raw.githubusercontent.com/Adalab/rick-y-
 morty/master/data/rick-y-morty.json
 Para esta primera parte del ejercicio es suficiente pintar la información sin maquetar.
