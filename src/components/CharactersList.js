@@ -11,7 +11,11 @@ const CharactersList = props => {
         <p className="not-found-text">
           No hay personajes que coincidan con la búsqueda{" "}
         </p>
-        <img src={`${RickAndMorty}`} alt="Rick and Morty" />
+        <img
+          className="not-found-image"
+          src={`${RickAndMorty}`}
+          alt="Rick and Morty"
+        />
       </div>
     );
   } else {
