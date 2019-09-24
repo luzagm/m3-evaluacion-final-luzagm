@@ -7,14 +7,12 @@ Vamos de definir las distintas partes del ejercicio:
 
 ### 1. Listado de personajes
 En primer lugar, vamos a realizar una web con el listado de personajes de Rick and Morty. Para eso, vamos a
-utilizar el servicio de https://rickandmortyapi.com/documentation/#get-all-characters que nos devuelve
+utilizar el servicio de https://rickandmortyapi.com/documentation/#get-all-characters (si este servicio no funcionase tenemos una url de backip: https://raw.githubusercontent.com/Adalab/rick-y-
+morty/master/data/rick-y-morty.json) que nos devuelve
 información sobre los primeros 20 personajes de la serie. Sobre cada uno, vamos a pintar al menos:
 - foto
 - nombre
 - especie <br>
-Si este servicio no funcionase tenemos una url de backup: https://raw.githubusercontent.com/Adalab/rick-y-
-morty/master/data/rick-y-morty.json
-Para esta primera parte del ejercicio es suficiente pintar la información sin maquetar.
 
 ### 2. Filtrado de personajes
 Ahora que ya tenemos el listado de personajes en pantalla, la segunda parte consiste en poder buscarlos por
