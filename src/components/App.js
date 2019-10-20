@@ -44,19 +44,17 @@ class App extends React.Component {
   renderOriginal() {
     let searchResult = [];
 
-    if (this.state.inputValue) {
-      searchResult = this.state.characters.filter(character => {
+    searchResult = this.state.characters
+      .filter(character => {
         return character.name
           .toUpperCase()
           .includes(this.state.inputValue.toUpperCase());
-      });
-    } else {
-      searchResult = this.state.characters.filter(character => {
+      })
+      .filter(character => {
         return character.species
           .toUpperCase()
           .includes(this.state.radioValue.toUpperCase());
       });
-    }
 
     return (
       <Home
